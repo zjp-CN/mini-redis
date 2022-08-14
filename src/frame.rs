@@ -266,7 +266,7 @@ fn get_line<'a>(src: &mut Cursor<&'a [u8]>) -> Result<&'a [u8], Error> {
 
 impl From<String> for Error {
     fn from(src: String) -> Error {
-        Error::Other(src.into())
+        Error::Other(src)
     }
 }
 
